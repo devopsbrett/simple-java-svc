@@ -15,7 +15,7 @@ node {
 
   stage('test') {
     withMaven(maven: 'M3') {
-      sh("mvn verify")
+      sh("mvn integration-test")
     }
   }
 }
