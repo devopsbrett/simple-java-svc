@@ -10,6 +10,7 @@ public class EchoIT {
 
     @Test
     public void firstEchoTest() {
+        port = 8181;
         get("/echo/hello").then().assertThat().body("message", equalTo("hello"));
     }
 }
