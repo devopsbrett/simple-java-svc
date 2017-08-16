@@ -9,13 +9,13 @@ node {
 
   stage('build') {
     withMaven(maven: 'M3') {
-        sh("mvn clean install")
+        sh("mvn -Dmaven.tomcat.port=8181 clean install")
     }
   }
 
   stage('test') {
     withMaven(maven: 'M3') {
-      sh("mvn verify")
+      sh("mvn -Dmaven.tomcat.port=8181 verify")
     }
   }
 }
