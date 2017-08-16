@@ -8,10 +8,14 @@ node {
   def GIT_COMMIT = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
 
   stage('build') {
-    sh("mvn clean install")
+    withMaven(maven: 'M3') {
+        sh("mvn clean install")
+    }
   }
 
   stage('test') {
+    withMaven(maven: 'M3') {
       sh("mvn verify")
+    }
   }
 }
