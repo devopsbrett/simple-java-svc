@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: io.contino.lse.pipeline.EchoIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.233 sec - in io.contino.lse.pipeline.EchoIT

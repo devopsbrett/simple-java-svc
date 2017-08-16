@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: io.contino.lse.pipeline.UserRestIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.765 sec <<< FAILURE! - in io.contino.lse.pipeline.UserRestIT
+test1CreateUser(io.contino.lse.pipeline.UserRestIT)  Time elapsed: 0.765 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> doesn't match actual status code <405>.
+
+	at io.contino.lse.pipeline.UserRestIT.test1CreateUser(UserRestIT.java:23)
+

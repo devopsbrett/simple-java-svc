@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="io.contino.lse.pipeline.UserRestIT" time="0.765" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/app"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/app"/>
+    <property name="PID" value="35"/>
+    <property name="java.runtime.version" value="1.8.0_111-8u111-b14-2~bpo8+1-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/opt/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="spring.beaninfo.ignore" value="true"/>
+    <property name="maven.conf" value="/opt/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.9.36-moby"/>
+    <property name="library.jansi.path" value="/opt/apache-maven-3.5.0/lib/jansi-native/linux64"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="catalina.home" value="/tmp/tomcat.7645567556933005353.8080"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/opt/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="maven.home" value="/opt/apache-maven-3.5.0"/>
+    <property name="catalina.base" value="/tmp/tomcat.7645567556933005353.8080"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="test1CreateUser" classname="io.contino.lse.pipeline.UserRestIT" time="0.765">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; doesn&apos;t match actual status code &lt;405&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> doesn't match actual status code <405>.
+
+	at io.contino.lse.pipeline.UserRestIT.test1CreateUser(UserRestIT.java:23)
+]]></failure>
+    <system-out><![CDATA[14:07:58.167 [Finalizer] DEBUG o.a.h.i.conn.DefaultClientConnection - Connection 0.0.0.0:54740<->127.0.0.1:8080 closed
+14:07:58.583 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://localhost:8080
+14:07:58.583 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to localhost:8080
+14:07:58.585 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+14:07:58.585 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+14:07:58.585 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+14:07:58.585 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+14:07:58.586 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+14:07:58.586 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Sending request: POST /users/ HTTP/1.1
+14:07:58.588 [main] DEBUG org.apache.http.wire -  >> "POST /users/ HTTP/1.1[\r][\n]"
+14:07:58.601 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+14:07:58.601 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+14:07:58.601 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 82[\r][\n]"
+14:07:58.601 [main] DEBUG org.apache.http.wire -  >> "Host: localhost:8080[\r][\n]"
+14:07:58.601 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+14:07:58.601 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_111)[\r][\n]"
+14:07:58.601 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:07:58.602 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+14:07:58.602 [main] DEBUG org.apache.http.headers - >> POST /users/ HTTP/1.1
+14:07:58.602 [main] DEBUG org.apache.http.headers - >> Accept: */*
+14:07:58.602 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+14:07:58.602 [main] DEBUG org.apache.http.headers - >> Content-Length: 82
+14:07:58.602 [main] DEBUG org.apache.http.headers - >> Host: localhost:8080
+14:07:58.602 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+14:07:58.602 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_111)
+14:07:58.602 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+14:07:58.605 [main] DEBUG org.apache.http.wire -  >> "{"name":"Bruno Krebs","email":"brunokrebs@spam4.me","password":"bestpasswordever"}"
+14:07:58.671 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 405 Method Not Allowed[\r][\n]"
+14:07:58.671 [main] DEBUG org.apache.http.wire -  << "Server: Apache-Coyote/1.1[\r][\n]"
+14:07:58.671 [main] DEBUG org.apache.http.wire -  << "X-Application-Context: application[\r][\n]"
+14:07:58.671 [main] DEBUG org.apache.http.wire -  << "Allow: HEAD, GET[\r][\n]"
+14:07:58.671 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+14:07:58.672 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+14:07:58.672 [main] DEBUG org.apache.http.wire -  << "Date: Wed, 16 Aug 2017 14:07:58 GMT[\r][\n]"
+14:07:58.672 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+14:07:58.672 [main] DEBUG o.a.h.i.conn.DefaultClientConnection - Receiving response: HTTP/1.1 405 Method Not Allowed
+14:07:58.672 [main] DEBUG org.apache.http.headers - << HTTP/1.1 405 Method Not Allowed
+14:07:58.672 [main] DEBUG org.apache.http.headers - << Server: Apache-Coyote/1.1
+14:07:58.672 [main] DEBUG org.apache.http.headers - << X-Application-Context: application
+14:07:58.672 [main] DEBUG org.apache.http.headers - << Allow: HEAD, GET
+14:07:58.672 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+14:07:58.673 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+14:07:58.673 [main] DEBUG org.apache.http.headers - << Date: Wed, 16 Aug 2017 14:07:58 GMT
+14:07:58.673 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+14:07:58.674 [main] DEBUG c.j.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+14:07:58.674 [main] DEBUG c.j.r.i.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+]]></system-out>
+  </testcase>
+</testsuite>
